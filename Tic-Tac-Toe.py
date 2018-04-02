@@ -1,5 +1,6 @@
 '''
 Program currently does not keep track/score. Program will run 9 times then exit
+Source code available in the Resources at http://nostarch.com/automatestuff
 '''
 
 theBoard = {'top-L': ' ', 'top-M': ' ', 'top-R': ' ',
