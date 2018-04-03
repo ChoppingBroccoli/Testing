@@ -53,9 +53,19 @@ def displayInventory(inventory):
 # inventory is a dict representing the player's inventory
 # addedItems is a list like dragonLoot. NOTE: Can contain multiples of the same item
 def addToInventory(inventory, addedItems):
+    totalItems = 0
+    '''
+    #################
+    ## PSUEDO CODE ##
+    #################
+
+    For each item in the dragonLoot list
+        If the item from dragonLoot (addedItems) exists as a key in playerInv (inventory), add 1 to the dict. value
+        Else, create the key:value pair in playerInv (inventory) and add 1 to totalItems
+    Print the updated playerInv (inventory) as well as the total number of items (totalItems)
+    '''
 
 
-inv = {'gold coin': 42, 'rope': 1}
 dragonLoot = ['gold coin', 'dagger', 'gold coin', 'gold coin', 'ruby']
 playerInv = addToInventory(playerInv, dragonLoot)
 
