@@ -63,6 +63,8 @@ def addToInventory(inventory, addedItems):
         If the item from dragonLoot (addedItems) exists as a key in playerInv (inventory), add 1 to the dict. value
         Else, create the key:value pair in playerInv (inventory) and add 1 to totalItems
     Print the updated playerInv (inventory) as well as the total number of items (totalItems)
+
+    How do you add keys to an existing dictionary???
     '''
 
 
