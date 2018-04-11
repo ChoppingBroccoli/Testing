@@ -54,7 +54,7 @@ def displayInventory(inventory):
 # addedItems is a list like dragonLoot. NOTE: Can contain multiples of the same item
 def addToInventory(inventory, addedItems):
     totalItems = 0
-    '''
+    '''    
     #################
     ## PSUEDO CODE ##
     #################
@@ -67,9 +67,16 @@ def addToInventory(inventory, addedItems):
     How do you add keys to an existing dictionary???
     '''
 
+    for inventory in playerInv:
+        for addedItems in dragonLoot:
+            if inventory == addedItems:
+                print(addedItems + ' is already in your Inventory')
+            else:
+                print(addedItems + ' is not in your inventory')
+        
 
 dragonLoot = ['gold coin', 'dagger', 'gold coin', 'gold coin', 'ruby']
 playerInv = addToInventory(playerInv, dragonLoot)
-
+addToInventory('shovel', 2)
 
 displayInventory(playerInv)
