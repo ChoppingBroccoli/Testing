@@ -12,13 +12,13 @@ for dict_item in prac_dict:
     print('We are comparing ' + str.upper(prac_list[list_it]) + ' from the List with ' + str.upper(dict_item) +
           ' from the Dictionary')
     list_it += 1
-    for list_item in prac_list:
-        if list_item != dict_item:
-            print(str.upper(list_item) + ',from the List, is not in your inventory')
+    for list_item in (range(len(prac_list) + 1)):
+        if prac_list[list_item] != dict_item:
+            print(str.upper(prac_list[list_item]) + ',from the List, is not in your inventory')
         else:
-            print(str.upper(list_item) + ', from the List matches ' + str.upper(dict_item) + ' in the Dictionary')
+            print(str.upper(prac_list[list_item]) + ', from the List matches ' + str.upper(dict_item) + ' in the Dictionary')
             print('You have ' + str(prac_dict[dict_item]) + ' of these in inventory' + '\n')
-            
+            break
 
 '''
 Cannot print information about 'ruby'. For loop ends with sword. Likely because the list
